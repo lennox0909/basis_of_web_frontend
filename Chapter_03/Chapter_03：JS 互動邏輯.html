@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>第三課：JS 互動邏輯</title>
+    <style>
+        body {
+            text-align: center;
+            padding-top: 100px;
+            font-family: sans-serif;
+        }
+
+        #number {
+            font-size: 5rem;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>互動計數器</h1>
+    <div id="number">0</div>
+    <button id="addBtn">點擊增加</button>
+
+    <script>
+        const display = document.getElementById('number');
+        const btn = document.getElementById('addBtn');
+        let count = 0;
+
+        // 監聽點擊動作
+        btn.addEventListener('click', () => {
+            count++; // 數值加 1
+            display.textContent = count; // 更新畫面
+
+            // 邏輯判斷：滿 10 次變色
+            if (count >= 10) {
+                display.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+
+</html>
