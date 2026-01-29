@@ -1,0 +1,17 @@
+/* style.css */
+body {
+    text-align: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+}
+
+#number {
+    font-size: 5rem;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
