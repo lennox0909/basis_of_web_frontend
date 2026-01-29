@@ -1,4 +1,9 @@
 # **第三課：JS 互動邏輯 — 網頁的靈魂**
+* HTML 負責定義 ID（如 `number` 和 `addBtn`），這些 ID 是 JS 用來尋找目標的「鉤子」。
+* 透過 `addEventListener` 監聽點擊事件，並動態修改 DOM 的屬性。
+  * DOM 操作：document.getElementById 讓我們能控制 HTML 標籤。
+  * 事件監聽：click 是最常用的事件，讓按鈕具備功能。
+  * 邏輯控制：if 判斷式讓網頁能根據當前狀態（count）做出不同的反應。
 
 ## **1\. 核心概念**
 
