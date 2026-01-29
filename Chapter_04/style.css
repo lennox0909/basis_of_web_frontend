@@ -1,0 +1,40 @@
+/* style.css */
+
+/* 基本設定 */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 彈性佈局外容器 */
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* 關鍵：當寬度不足時，內容會自動擠到下一列 */
+}
+
+/* 內容區塊設定 */
+.box {
+    flex: 1;         /* 讓區塊平分剩餘空間 */
+    min-width: 250px; /* 每個區塊的最小寬度，低於此寬度就會換行 */
+    background: #34495e;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s ease; /* 增加顏色切換的平滑感 */
+}
+
+/* ----------------------------------------- */
+/* 媒體查詢 (Media Queries)：當螢幕寬度小於 600px 時 */
+/* ----------------------------------------- */
+@media (max-width: 600px) {
+    .box {
+        background: #e67e22; /* 手機版變橘色，增加視覺提醒 */
+    }
+
+    h1 {
+        font-size: 1.2rem;   /* 縮小標題字體以適應小螢幕 */
+    }
+}
