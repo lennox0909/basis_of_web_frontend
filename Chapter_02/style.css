@@ -1,0 +1,29 @@
+/* 頁面背景與全域置中設定 */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
+    height: 100vh;           /* 佔滿整個視窗高度 */
+    margin: 0;
+}
+
+/* 卡片容器設計 */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* 文字顏色設定 */
+h1 {
+    color: #3498db;
+}
+
+p {
+    color: #666;
+}
