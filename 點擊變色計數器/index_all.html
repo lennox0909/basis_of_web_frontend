@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的計數器範例</title>
+    <style>
+        /* 這裡放 CSS */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        #counter {
+            font-size: 5rem;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: color 0.3s ease;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>點擊計數器</h1>
+        <div id="counter">0</div>
+        <button id="btn">點我加 1 並變色</button>
+    </div>
+
+    <script>
+        // 這裡放 JavaScript
+        const counterDisplay = document.getElementById('counter');
+        const button = document.getElementById('btn');
+        let count = 0;
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        button.addEventListener('click', function() {
+            count++;
+            counterDisplay.textContent = count;
+            counterDisplay.style.color = getRandomColor();
+        });
+    </script>
+
+</body>
+</html>
