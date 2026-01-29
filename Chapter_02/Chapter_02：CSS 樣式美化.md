@@ -1,4 +1,7 @@
 # **第二課：CSS 樣式美化 — 網頁的皮囊**
+* 展示了如何使用 Flexbox 佈局和 Card UI 設計
+* 這一課的重點在於 CSS Box Model (盒模型) 和 Flexbox。
+
 
 ## **1\. 核心概念**
 
