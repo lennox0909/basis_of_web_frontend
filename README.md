@@ -50,4 +50,4 @@
      4. 渲染到 HTML ->
      5. 錯誤處理 (Error Handling)。
 
-**提示**：不要急著一次看完，我們會一課一課動手做！
+**提示**：線上立即來coding: [codepen](https://codepen.io/pen/)
